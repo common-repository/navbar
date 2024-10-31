@@ -1,0 +1,141 @@
+#navbar-add-link-dialog label, #navbar-add-link-dialog input, #navbar-edit-links-dialog label, #navbar-edit-links-dialog input
+{ 
+    display:block; 
+}
+
+#navbar-add-link-dialog input.text, #navbar-edit-links-dialog input.text
+{ 
+    margin-bottom:12px; 
+    width:95%; 
+    padding: .4em; 
+}
+
+#navbar-add-link-dialog fieldset, #navbar-edit-links-dialog fieldset
+{ 
+    padding:0; 
+    border:0; 
+    margin-top:25px; 
+}
+
+#navbar-add-link, #navbar-add-separator, #navbar-edit-links
+{
+    display:block;
+    cursor:pointer;
+    margin: 0 10px 0 10px;
+    text-decoration:none;
+    text-align:center;
+}
+
+#navbar-add-link
+{
+    bottom: 120px;
+    position:fixed;
+}
+
+#navbar-add-separator
+{
+    bottom: 95px;
+    position:fixed;    
+}
+
+#navbar-edit-links
+{
+    bottom: 70px;
+    position:fixed;
+}
+
+#navbar-info
+{
+    padding: 0px 10px 0px 10px;
+    text-align:left;
+}
+
+
+#navbar-info h4
+{
+    margin: 0px;
+    display: block;
+    text-align:center;
+}
+
+#navbar-trash 
+{  
+    height: 50px;
+    margin-left:10px;
+    margin-right:10px;    
+    bottom:10px;
+    position:fixed;
+} 
+
+#navbar-trash h4 
+{ 
+    line-height: 16px; 
+    margin: 0 0 0.4em; 
+}
+
+#navbar-trash h4 .ui-icon 
+{ 
+    float: left; 
+}
+	
+#navbar-sortable a
+{
+    display:block;
+    cursor:pointer;
+    margin: 0 5px;
+    padding-left:5px;
+    text-decoration:none;
+    line-height: 1.4em;
+    text-align:left;
+}
+
+#navbar-sortable .ui-state-highlight
+{
+    height: 20px;
+}
+
+#navbar-sortable
+{
+    margin-bottom:0px;
+    padding-bottom:5px;
+}
+
+.navbar-separator
+{   
+	background-color:#CCCCCC;
+	cursor:pointer;
+	display:block;
+	margin-bottom:5px;
+	margin-top:5px;
+}
+
+#navbar 
+{
+	margin:0 0 3px;
+	overflow:hidden;
+	padding:4px 0;
+	position:fixed;
+	top:0;
+	height:100%;
+	font-size: 12px;
+	line-height:13px;
+}
+
+* html #navbar
+{ 
+    /*IE6 hack*/
+	position: absolute;
+	width: expression(document.compatMode=="CSS1Compat"? document.documentElement.clientWidth+"px" : body.clientWidth+"px");
+}
+
+.navbar-left
+{
+    border-right: 1px solid #808080;
+    left: 0px;
+}
+
+.navbar-right
+{
+    border-left: 1px solid #808080;
+    right: 0px;    
+}
